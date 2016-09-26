@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Aminoacid	database.h	/^	struct Aminoacid$/;"	s
+Atom	database.h	/^	struct Atom$/;"	s
+DATABASE_H_	database.h	7;"	d
+Individual	geneticAlgorithm.cpp	/^Individual::Individual()$/;"	f	class:Individual
+Individual	geneticAlgorithm.h	/^	struct Individual$/;"	s
+OBJ	makefile	/^OBJ = $(SRC:.cpp=.o)$/;"	m
+SANITY_CHECK	geneticAlgorithm.cpp	28;"	d	file:
+SRC	makefile	/^SRC = $(wildcard *.cpp)$/;"	m
+_GENETIC_ALGORITHM_H_	geneticAlgorithm.h	2;"	d
+aminoacid_create	database.cpp	/^	struct Aminoacid *aminoacid_create(void)$/;"	f
+aminoacids_aa	database.h	/^		std::string aminoacids_aa;$/;"	m	struct:Aminoacid
+aminoacids_at	database.h	/^		std::string aminoacids_at;$/;"	m	struct:Atom
+aminoacids_chain	geneticAlgorithm.h	/^		int **aminoacids_chain;    		 \/* Chains of amino acids.  *\/$/;"	m	struct:Individual
+aminoacids_crossover	geneticAlgorithm.cpp	/^void aminoacids_crossover(Individual *offspring, $/;"	f
+archiveSize	main.cpp	/^int archiveSize = 10;				  \/* Archive size.						*\/$/;"	v
+atom_create	database.cpp	/^	struct Atom *atom_create(void)$/;"	f
+atoms	database.h	/^		std::string atoms;$/;"	m	struct:Atom
+binary_tournament	geneticAlgorithm.cpp	/^void binary_tournament(vector<Individual *> &selected, $/;"	f
+c_rate	geneticAlgorithm.h	/^		double c_rate; \/* Crossover rate.   *\/$/;"	m	struct:genome
+calculate_density	geneticAlgorithm.cpp	/^double calculate_density(Individual *p1, vector<Individual *> &Union)$/;"	f
+calculate_dominated	geneticAlgorithm.cpp	/^void calculate_dominated(vector<Individual *> &Union)$/;"	f
+calculate_fitness	geneticAlgorithm.cpp	/^void calculate_fitness(vector<Individual *> &population, vector<Individual *> &archive)$/;"	f
+calculate_objectives	geneticAlgorithm.cpp	/^void calculate_objectives(vector<Individual *> &population)$/;"	f
+calculate_raw_fitness	geneticAlgorithm.cpp	/^int calculate_raw_fitness(Individual *p1, vector<Individual *> &Union)$/;"	f
+calculate_weighted_sum	geneticAlgorithm.cpp	/^void calculate_weighted_sum(vector<Individual *> &archive)$/;"	f
+chain_at	database.h	/^		std::string chain_at;$/;"	m	struct:Atom
+copy_individual	geneticAlgorithm.cpp	/^Individual *copy_individual(Individual *individual)$/;"	f
+crossoverRate	main.cpp	/^double crossoverRate = 0.8;$/;"	v
+data_aminoacids	database.h	/^		Aminoacid ***data_aminoacids;\/* amino acids data.			 *\/$/;"	m	struct:database
+data_atoms	database.h	/^		Atom ***data_atoms;      	 \/* atoms data.					 *\/$/;"	m	struct:database
+database	database.h	/^	struct database$/;"	s
+database	main.cpp	/^struct database database;$/;"	v	typeref:struct:database
+database_destroy	database.cpp	/^void database_destroy()$/;"	f
+database_parse	database.cpp	/^void database_parse(const char **filenames, int nproteins)$/;"	f
+database_read	database.cpp	/^void database_read (const char **filenames, int nproteins)$/;"	f
+dbg	database.cpp	16;"	d	file:
+dbg	geneticAlgorithm.cpp	19;"	d	file:
+dbg	main.cpp	15;"	d	file:
+density	geneticAlgorithm.h	/^		double density;$/;"	m	struct:Individual
+distance	geneticAlgorithm.h	/^		double distance;	$/;"	m	struct:Individual
+dom_set	geneticAlgorithm.h	/^		std::vector<Individual *> dom_set;$/;"	m	struct:Individual
+dominates	geneticAlgorithm.cpp	/^bool Individual::dominates(Individual *individual)$/;"	f	class:Individual
+environmetal_selection	geneticAlgorithm.cpp	/^void environmetal_selection(vector<Individual *> &population, vector<Individual *> &archive)$/;"	f
+euclidian_distance	geneticAlgorithm.cpp	/^double euclidian_distance(vector<double> objectivesI1, vector<double> objectivesI2)$/;"	f
+filenames	main.cpp	/^static const char **filenames = NULL; \/* Name of input files.               *\/$/;"	v	file:
+fitness	geneticAlgorithm.h	/^		double fitness;$/;"	m	struct:Individual
+geneticAlgorithm	geneticAlgorithm.cpp	/^void geneticAlgorithm(genome *g, int popsize, int ngen)$/;"	f
+genome	geneticAlgorithm.h	/^	struct genome$/;"	s
+has_feature	geneticAlgorithm.cpp	/^int has_feature(int *g, int feature, int n)$/;"	f
+id	database.h	/^		int id;$/;"	m	struct:Atom
+individual_crossover	geneticAlgorithm.cpp	/^void individual_crossover(Individual *offspring, Individual *mom,$/;"	f
+individual_destroy	geneticAlgorithm.cpp	/^void individual_destroy(Individual *individual)$/;"	f
+individual_mutation	geneticAlgorithm.cpp	/^void individual_mutation(Individual *individual)$/;"	f
+individual_random	geneticAlgorithm.cpp	/^Individual *individual_random()$/;"	f
+listAtoms	database.h	/^		std::vector<Atom*> listAtoms;$/;"	m	struct:Aminoacid
+m_rate	geneticAlgorithm.h	/^		double m_rate; \/* Mutation rate.    *\/$/;"	m	struct:genome
+main	main.cpp	/^int main(int argc, char **argv)$/;"	f
+matching	geneticAlgorithm.h	/^		int matching;$/;"	m	struct:Individual
+maxaminoacids	database.h	/^	    int maxaminoacids;		 	\/*largest number of amino acids. *\/$/;"	m	struct:database
+maxatoms	database.h	/^		int maxatoms;			 	\/*largest number of atoms.       *\/$/;"	m	struct:database
+minaminoacids	database.h	/^	    int minaminoacids; 	 		\/*smallest number of amino acids.*\/        $/;"	m	struct:database
+minatoms	database.h	/^	    int minatoms; 			 	\/*smallest number of atoms  	 *\/$/;"	m	struct:database
+mutationRate	main.cpp	/^double mutationRate = 0.1;$/;"	v
+naminoacids	database.h	/^		int *naminoacids;  	 		\/*number of amino acids $/;"	m	struct:database
+natoms	database.h	/^	    int *natoms; 			 	\/*number of atoms for each $/;"	m	struct:database
+ngen	main.cpp	/^int ngen = 50;          		 	  \/* Number of generations.             *\/$/;"	v
+nproteins	main.cpp	/^int nproteins = 0;               	  \/* Number of proteins (input files).  *\/$/;"	v
+numberOfObjectives	main.cpp	/^int numberOfObjectives = 1;			  \/* Number of external individuals.	*\/$/;"	v
+objectiveOne	geneticAlgorithm.cpp	/^void objectiveOne(Individual *ind)$/;"	f
+objectiveThree	geneticAlgorithm.cpp	/^void objectiveThree(Individual *ind)$/;"	f
+objectiveTwo	geneticAlgorithm.cpp	/^void objectiveTwo(Individual *i1)$/;"	f
+objectives	geneticAlgorithm.h	/^		std::vector<double> objectives;$/;"	m	struct:Individual
+ordenationDensity	geneticAlgorithm.cpp	/^bool ordenationDensity(const struct Individual *one, $/;"	f
+ordenationDistance	geneticAlgorithm.cpp	/^bool ordenationDistance(const struct Individual *one, $/;"	f
+ordenationFitness	geneticAlgorithm.cpp	/^bool ordenationFitness(const struct Individual *one, $/;"	f
+ordenationWeighted_sum	geneticAlgorithm.cpp	/^bool ordenationWeighted_sum(const struct Individual *one, $/;"	f
+popsize	main.cpp	/^int popsize = 10;		         	  \/* Population size.                   *\/$/;"	v
+print_base	database.cpp	/^void print_base(void)$/;"	f
+print_individual	geneticAlgorithm.cpp	/^void print_individual(Individual *individual)$/;"	f
+protein_matches	geneticAlgorithm.cpp	/^void protein_matches(int popsize, int ngen, double crossoverRate, double mutationRate)$/;"	f
+r_rate	geneticAlgorithm.h	/^		double r_rate; \/* Replacement rate. *\/$/;"	m	struct:genome
+raw_fitness	geneticAlgorithm.h	/^		double raw_fitness;$/;"	m	struct:Individual
+readMatrix	database.cpp	/^void readMatrix()$/;"	f
+readargs	main.cpp	/^static void readargs(int argc, char **argv)$/;"	f	file:
+reproduce	geneticAlgorithm.cpp	/^void reproduce(genome *g, vector<Individual *> &population, vector<Individual *> &selected)$/;"	f
+saveFile	geneticAlgorithm.cpp	22;"	d	file:
+sortVector	geneticAlgorithm.cpp	/^vector<Individual *> sortVector(vector<Individual *> oldVector, string type)$/;"	f
+time_ga	geneticAlgorithm.cpp	21;"	d	file:
+time_program	database.cpp	17;"	d	file:
+time_program	geneticAlgorithm.cpp	20;"	d	file:
+time_program	main.cpp	16;"	d	file:
+usage	main.cpp	/^static void usage(void)$/;"	f	file:
+weighted_sum	geneticAlgorithm.h	/^		double weighted_sum;	$/;"	m	struct:Individual
+x	database.h	/^		float x,y,z;$/;"	m	struct:Atom
+y	database.h	/^		float x,y,z;$/;"	m	struct:Atom
+z	database.h	/^		float x,y,z;$/;"	m	struct:Atom
